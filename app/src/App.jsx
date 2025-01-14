@@ -31,32 +31,33 @@ const App = () => {
   if (loading) return <div>loading...</div>;
 
   return (
-    <Container>
-      <TopContainer>
-        <div className="logo">
-          <img src="/logo.svg" alt="logo" />
-        </div>
+    <>
+      <Container>
+        <TopContainer>
+          <div className="logo">
+            <img src="/logo.svg" alt="logo" />
+          </div>
 
-        <div className="search">
-          <input placeholder="Search Food" />
-        </div>
-      </TopContainer>
+          <div className="search">
+            <input placeholder="Search Food" />
+          </div>
+        </TopContainer>
 
-      <FilterContainer>
-        <Button>All </Button>
-        <Button>Breakfast </Button>
-        <Button>Lunch </Button>
-        <Button>Dinner </Button>
-      </FilterContainer>
-
+        <FilterContainer>
+          <Button>All </Button>
+          <Button>Breakfast </Button>
+          <Button>Lunch </Button>
+          <Button>Dinner </Button>
+        </FilterContainer>
+      </Container>
       <SearchResult data={data} />
-    </Container>
+    </>
   );
 };
 
 export default App;
 
-const Container = styled.div`
+export const Container = styled.div`
   max-width: 1200px;
   margin: 0 auto;
 `;
