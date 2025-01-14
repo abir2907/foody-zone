@@ -1,11 +1,16 @@
 import styled from "styled-components";
+import { BASE_URL } from "../../App";
 
 const SearchResult = ({ data: foods }) => {
   return (
     <FoodCardsContainer>
       <FoodCards>
         {foods?.map((food) => (
-          <FoodCard key={food.name}>{food.text}</FoodCard>
+          <FoodCard key={food.name}>
+            <div className="food_image">
+              <img src={BASE_URL + food.image} />
+            </div>
+          </FoodCard>
         ))}
       </FoodCards>
     </FoodCardsContainer>
