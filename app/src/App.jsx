@@ -49,7 +49,7 @@ const App = () => {
         <Button>Dinner </Button>
       </FilterContainer>
 
-      <SearchResult />
+      <SearchResult data={data} />
     </Container>
   );
 };
