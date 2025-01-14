@@ -29,7 +29,7 @@ const SearchResult = ({ data: foods }) => {
 export default SearchResult;
 
 const FoodCardsContainer = styled.section`
-  height: calc(100vh - 210px);
+  min-height: calc(100vh - 210px);
   background-image: url("/bg.png");
   background-size: cover;
 `;
