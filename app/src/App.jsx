@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
+import SearchResult from "./components/SearchResult/SearchResult";
 
 const BASE_URL = "http://localhost:9000";
 
@@ -48,9 +49,7 @@ const App = () => {
         <Button>Dinner </Button>
       </FilterContainer>
 
-      <FoodCardsContainer>
-        <FoodCards></FoodCards>
-      </FoodCardsContainer>
+      <SearchResult />
     </Container>
   );
 };
@@ -96,11 +95,3 @@ const Button = styled.button`
   border: none;
   cursor: pointer;
 `;
-
-const FoodCardsContainer = styled.section`
-  height: calc(100vh - 210px);
-  background-image: url("/bg.png");
-  background-size: cover;
-`;
-
-const FoodCards = styled.div``;
