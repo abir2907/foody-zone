@@ -110,4 +110,7 @@ export const Button = styled.button`
   padding: 6px 12px;
   border: none;
   cursor: pointer;
+  &:hover {
+    background-color: #f22f2f;
+  }
 `;
